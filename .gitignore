@@ -1,0 +1,55 @@
+# ============================================================
+# Root .gitignore — RAG-based ResumeJD Matcher
+# ============================================================
+
+# --- Python / Backend ---
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/chroma_db/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.Python
+
+# --- Environment & Secrets (NEVER commit these) ---
+backend/.env
+.env
+*.env
+
+# --- Frontend / Node ---
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.local
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- OS Artifacts ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editor Directories ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- ChromaDB runtime data ---
+chroma_db/
